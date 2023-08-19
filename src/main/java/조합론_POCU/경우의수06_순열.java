@@ -7,8 +7,10 @@ public class 경우의수06_순열 {
     public static void main(String[] args){
         calculatePermutation(16,3);
     }
+
     static void calculatePermutation(int n, int r){
         System.out.println(getFactorial(n) / getFactorial(n-r));
+        calculatePermutationWithRepetition(8);
 
     }
 
@@ -17,6 +19,12 @@ public class 경우의수06_순열 {
             return n;
         }
         return n * getFactorial(n-1);
+    }
+
+
+    static void calculatePermutationWithRepetition(int n){
+        System.out.println(Math.pow((double)n, (double)n));
+
     }
 }
 
