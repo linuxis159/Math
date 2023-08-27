@@ -6,4 +6,11 @@ package 확률_POCU;
 //모든 경우의 수에서 하나를 뽑는 절차 -> 실험(Experiment)
 //유한 표본공간(경우의수가 무한이아닌)가정하에확률성립
 public class 확률01 {
+    public static void main(String[] args){
+        calculateProbability(100, 30);
+    }
+    static void calculateProbability(int sampleSpace, int experiment){
+        System.out.println((double) experiment / sampleSpace);
+    }
 }
+

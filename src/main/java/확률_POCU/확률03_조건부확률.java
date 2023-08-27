@@ -14,4 +14,16 @@ package 확률_POCU;
 //다음과 같이 응답한 사람들중 딸만 2명인 가족의 비율
 
 public class 확률03_조건부확률 {
+    public static void main(String[] args){
+        calculateConditionalProbability(getSampleSpace(2,3),2, 5);
+    }
+
+    static int getSampleSpace(double event, double trial){
+        return (int)Math.pow(event, trial);
+    }
+    static void calculateConditionalProbability(int sampleSpace, int eventF, int eventE){
+
+    }
+
 }
+
