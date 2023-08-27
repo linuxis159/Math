@@ -24,7 +24,7 @@ public class 모듈러연산 {
         System.out.println("moduler result : " + (b % n));
 
     }
-    //서로소 구하기
+    //유클리우드 호재법으로 최대공약수를 구해 서로소 구하기
     public static boolean getCoprimeByEuclideanAlgorithm(long a, long b){
         long remainder1 = a % b;
         long remainder2 = b;
